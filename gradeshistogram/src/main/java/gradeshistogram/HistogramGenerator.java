@@ -58,10 +58,10 @@ public class HistogramGenerator {
 	
 	public static int[] frequencies(ArrayList<Integer> grades) { // calculate frequency for every grade by creating a big array starting from 1 to max(grade) and increasing it by 1 every time I find it
 		
-	        int[] frqnc = new int[Collections.max(grades)];
+	        int[] frqnc = new int[Collections.max(grades) + 1];
 	        
 	        for(int i = 0; i < grades.size(); i++) {
-	        	frqnc[grades.get(i) - 1]++;
+	        	frqnc[grades.get(i)]++;
 	        }
 	        
 	        return frqnc;
