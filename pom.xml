@@ -6,6 +6,12 @@
   <packaging>pom</packaging>
   <name>SWEng 2022 Labs</name>
   <description>The Maven Project for SEIP Spring 2022 lab assignments</description>
+  
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
   <modules>
   	<module>gradeshistogram</module>
   </modules>
