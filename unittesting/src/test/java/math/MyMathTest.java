@@ -21,16 +21,16 @@ public class MyMathTest {
 
 	  @Test
 	  public void testFactorial_wrongInput_Negative() {
-	    thrown.expect(IllegalArgumentException.class);
-	    thrown.expectMessage("X must be >= 0");
-	    mymath.factorial(-1);
+		  thrown.expect(IllegalArgumentException.class);
+		  thrown.expectMessage("Expected x >= 0");
+		  mymath.factorial(-5);
 	  }
 
 	  @Test
 	  public void testFactorial_wrongInput_BiggerThanTwelve() {
-	    thrown.expect(IllegalArgumentException.class);
-	    thrown.expectMessage("X must be <= 12");
-	    mymath.factorial(15);
+		  thrown.expect(IllegalArgumentException.class);
+		  thrown.expectMessage("Expected x <= 12");
+		  mymath.factorial(13);
 	  }
 
 	
