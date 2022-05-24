@@ -1,0 +1,14 @@
+100
+103.5
+200
+Hello World
+300
+400
+500
+600
+!!!
+700
+800
+900
+SEIP assignments labs
+1000

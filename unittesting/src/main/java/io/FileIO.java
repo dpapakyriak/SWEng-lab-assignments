@@ -38,8 +38,12 @@ public class FileIO {
 			reader = new BufferedReader(new FileReader(file));
 			String line = null;
 			while ((line = reader.readLine()) != null) {
-				int number = Integer.parseInt(line);
-				numbersList.add(number);
+				if ( checkInt(line) ) {
+					int number = Integer.parseInt(line);
+				    numbersList.add(number);
+				} else {
+					continue;
+				}		
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -50,6 +54,19 @@ public class FileIO {
 		
 		// Convert a List to an array using 
 		return numbersList.stream().mapToInt(i -> i).toArray();
+	}
+	
+	
+	
+	
+	public static boolean checkInt(String line) { /* Checks if line contains integer only*/
+		int x;
+		try {
+			x = Integer.parseInt(line);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 
 }
