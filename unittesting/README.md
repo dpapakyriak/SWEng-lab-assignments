@@ -15,8 +15,8 @@ For this repository, the author uses the following technologies:
 
 1. Clone this repository
 2. Choose yor module
-3. Run Maven install (This produces a jar file and places in the target folder of the module)
-4. Run java -jar <'jar's path> <folder path>
+3. Run Maven testing (mvn test) in your command line
+4. Generate Jococo report (mvn package jacoco:report)
 
 
 # Authors
