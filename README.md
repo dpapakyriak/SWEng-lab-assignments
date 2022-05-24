@@ -6,8 +6,8 @@ This is my working repository for all lab assignments on the course "Software En
 
 
 # Modules
-- [Grade Histogram Generator] (./gradehistogram/)
-- [Unit Testing] (./unittesting/)
+- [Grade Histogram Generator](./gradehistogram/)
+- [Unit Testing](./unittesting/)
 
 
 
