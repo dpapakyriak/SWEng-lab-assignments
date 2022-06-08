@@ -51,13 +51,16 @@ public class ArithmeticOperationsTest {
 		  Assert.assertEquals(1, ao.multiply(1, 1));
 		  Assert.assertEquals(98, ao.multiply(1, 98));
 		  Assert.assertEquals(1376515, ao.multiply(587, 2345));
+		  Assert.assertEquals(0, ao.multiply(0, 91));
+		  Assert.assertEquals(0, ao.multiply(85, 0));
+		  Assert.assertEquals(0, ao.multiply(0, 0));
 	  }
 	  
 
 	  @Test
 	  public void testMultiply_wrongInput_NegativeFirst() {
 		  thrown.expect(IllegalArgumentException.class);
-		  thrown.expectMessage("x & y should be >= 0");
+		  thrown.expectMessage("X and Y should be >= 0");
 		  ao.multiply(-1, 5);
 	  }
 	  
@@ -65,7 +68,7 @@ public class ArithmeticOperationsTest {
 	  @Test
 	  public void testMultiply_wrongInput_NegativeSecond() {
 		  thrown.expect(IllegalArgumentException.class);
-		  thrown.expectMessage("x & y should be >= 0");
+		  thrown.expectMessage("X and Y should be >= 0");
 		  ao.multiply(1, -5);
 	  }
 	  
@@ -73,7 +76,7 @@ public class ArithmeticOperationsTest {
 	  @Test
 	  public void testMultiply_wrongInput_BothNegative() {
 		  thrown.expect(IllegalArgumentException.class);
-		  thrown.expectMessage("x & y should be >= 0");
+		  thrown.expectMessage("X and Y should be >= 0");
 		  ao.multiply(-1, -5);
 	  }
 	  
@@ -81,7 +84,7 @@ public class ArithmeticOperationsTest {
 	  @Test
 	  public void testMultiply_wrongInput_TooBigNumber() {
 		  thrown.expect(IllegalArgumentException.class);
-		  thrown.expectMessage("The product does not fit in an Integer variable");
+		  thrown.expectMessage("The product is too big to fit in an Integer variable");
 		  ao.multiply(Integer.MAX_VALUE/5, 10);
 	  }
 	  
