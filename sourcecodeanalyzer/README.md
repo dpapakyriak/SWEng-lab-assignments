@@ -32,6 +32,7 @@ A maven project that reads input files and calculates the following metrics:
   - arg4 = “OutputFileType” [csv|json]
 
 
+&nbsp;
 # Module's Architecture
 ## UML Diagram
 ![uml_diagram](./UML_diagram.pdf)
