@@ -34,7 +34,7 @@ A maven project that reads input files and calculates the following metrics:
 
 # Module's Architecture
 ## UML Diagram
-![uml_diagram](/sourcecodeanalyzer/UML_diagram.pdf)
+![uml_diagram](/UML_diagram.pdf)
 
 
 ## Built with
